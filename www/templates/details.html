@@ -1,0 +1,39 @@
+<ion-view view-title="Resultados parciais" name="main-view" ng-controller="DetailsCtrl">
+	<!-- <ion-nav-bar class="bar bar-header bar-assertive">
+		<ion-nav-back-button>
+		</ion-nav-back-button>
+		<ion-nav-buttons side="right">
+			<button class="button" ng-click="logout()">
+				Logout
+			</button>
+		</ion-nav-buttons>
+	</ion-nav-bar> -->
+	<ion-content class="content info-aluno">
+		
+		<div class="card info-aluno">
+			<div class="item item-divider">
+				{{ detalhes.nome }}
+			</div>
+			<div class="item item-text-wrap">
+				<p><b>Faltas:</b> {{ detalhes.porcentagemAusencia }}%</p>
+				<p><b>Média:</b> {{ detalhes.media }}</p>
+				<br>
+
+				<ion-list>
+					<b>Notas</b>
+					<br>	
+					<br>
+					<ion-item ng-repeat="notas in detalhes.notas" class="listItem notasList">{{ notas.nome }} - {{ notas.nota }}</ion-item>
+				</ion-list>
+			</div>
+		</div>
+
+		
+		<div class="card card-graph" >
+		<!-- <div class="item item-divider">aaaa</div> -->
+		
+			<canvas id="line"></canvas> 
+			
+		</div>
+</ion-content>
+</ion-view>
