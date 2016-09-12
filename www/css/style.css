@@ -8,9 +8,6 @@
 	margin-right: 3%;
 
 }
-.bar-assertive{
-	color: #193C54!important;
-}
 
 .login-button{
 	width: 50%!important;
@@ -24,7 +21,7 @@
 
 .content {
     
-    background-color: #193C54;
+    background-color: #537072;
     padding: 5px 5px 5px 5px;
 }
 
@@ -78,6 +75,7 @@
 }
 
 .disciplinas-list-content {
+	background-color: #2C4A52 !important;
 	margin-right: .8em;
 	margin-left: .8em;
 	margin-bottom: 20px;
