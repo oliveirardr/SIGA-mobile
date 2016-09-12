@@ -1,6 +1,11 @@
 angular.module('starter.controllers', [])
 
-.controller('AppCtrl', function($scope, $http, $state, $ionicLoading, $ionicPopup){
+.controller('AppCtrl', function($scope, $http, $state, $ionicLoading, $ionicPopup, $ionicNavBarDelegate){
+
+    $scope.setNavTitle = function(a){
+      $ionicNavBarDelegate.title("SIGA Mobile");
+    }
+
 
     $scope.refresh = function(){
 
@@ -44,6 +49,7 @@ angular.module('starter.controllers', [])
   $scope.login = function(loginData) {
 
     $ionicLoading.show();
+    localStorage.clear();
     var requestBody = {
       login : loginData.username,
       password : loginData.password
@@ -182,10 +188,6 @@ angular.module('starter.controllers', [])
 
   plot();
 
-  $scope.logout = function(){
-      //localStorage.clear();
-      $state.go("login");
-    };
 
   })
 

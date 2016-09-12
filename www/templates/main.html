@@ -1,18 +1,18 @@
-<ion-view name="main-view" view-title="Resumo" ng-controller="MainCtrl">
+<ion-view name="main-view" view-title="Disciplinas" ng-controller="MainCtrl">
 
-<ion-content class="content">
+    <ion-content class="content">
 
 
-  <ion-refresher
+      <ion-refresher
       on-refresh="refresh()"
       pulling-text="Deslize para atualizar..."
-  >
+      >
   </ion-refresher>
 
 
-<div class="card info-aluno">
+  <div class="card info-aluno">
     <div class="item item-divider">
-        Detalhes do aluno
+        Detalhes do aluno:
     </div>
     <div class="item item-text-wrap">
         <p><b>Aluno:</b> {{ aluno.nome }}</p>
@@ -24,19 +24,14 @@
     </div>
     <ion-android-exit>
 
-</div>
+    </div>
 
-<div class="info-aluno disciplinas-list">
-    <h2 class="disciplinas-list-header">Disciplinas:</h2>
-    <ion-list class="disciplinas-list-content">
-    <ion-item ng-repeat="disciplina in disciplinas" class="listItem" ng-click="showGrades(disciplina)">{{ disciplina.nome }}</ion-item>
-</ion-list>
+    <div class="card info-aluno disciplinas-list">
+        <h2 class="item item-divider">Disciplinas:</h2>
+        <ion-list class="">
+            <ion-item ng-repeat="disciplina in disciplinas" class="listItem" ng-click="showGrades(disciplina)">{{ disciplina.nome }}</ion-item>
+        </ion-list>
 
-</div>
+    </div>
 </ion-content>
-
-<!--
-    </ion-pane>
--->
-
 </ion-view>
