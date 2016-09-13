@@ -1,4 +1,4 @@
-angular.module('starter', ['ionic', 'starter.controllers', 'chart.js'])
+angular.module('starter', ['ionic', 'starter.controllers', 'chart.js', 'ionic-native-transitions'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {

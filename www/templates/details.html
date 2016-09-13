@@ -6,26 +6,35 @@
 			<div class="item item-divider">
 				{{ detalhes.nome }}
 			</div>
-			<div class="item item-text-wrap">
-				<p><b>Faltas:</b> {{ detalhes.porcentagemAusencia }}%</p>
+			
+			<div class="item">
+				
+				<p><b>Faltas:</b> {{ detalhes.faltas }}%</p>
 				<p><b>Média:</b> {{ detalhes.media }}</p>
-				<br>
+				
+			</div>
 
+			<div class="item">
+				
+
+				<b>Notas</b>
+				<br>
+				<br>
+				<canvas id="line"/> 
+
+			</div>
+
+			<div class="item item-text-wrap">
 				<ion-list>
-					<b>Notas</b>
-					<br>	
-					<br>
 					<ion-item ng-repeat="notas in detalhes.notas" class="listItem notasList">{{ notas.nome }} - {{ notas.nota }}</ion-item>
 				</ion-list>
 			</div>
 		</div>
 
-		
+		<!-- 
 		<div class="card card-graph" >
-		<!-- <div class="item item-divider">aaaa</div> -->
-		
-			<canvas id="line"/> 
-			
-		</div>
-</ion-content>
+			<div class="item item-divider">aaaa</div>
+
+		</div> -->
+	</ion-content>
 </ion-view>

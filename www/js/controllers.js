@@ -155,6 +155,10 @@ angular.module('starter.controllers', [])
         ]
       },
       options: {
+        // title:{
+        //     display: true,
+        //     text: 'Notas Parciais'
+        // },
         scales: {
           yAxes: [{
             ticks: {

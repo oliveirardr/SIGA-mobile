@@ -1,5 +1,31 @@
 /* Empty. Add your own CSS if you like */
 
+.card{
+	background-color:#DDC5A2!important; 
+}
+.item-divider{
+	background-color:#DDC5A2!important; 
+}
+
+.bar-balanced{
+	/*color:#73605B!important;*/
+	background-color:#EB5E30!important; 
+}
+
+.button-balanced{
+	/*color:#73605B!important;*/
+	background-color:#EB5E30!important;
+}
+
+.button{
+	background-color:#EB5E30!important;	
+}
+
+.content {
+    background-color: #310B28;
+    padding: 5px 5px 5px 5px;
+}
+
 .login-input{
 
 	margin-top: 70%;
@@ -15,15 +41,11 @@
 }
 .info-aluno {
     font-size: 1em;   
-    //text-align: justify;
-    //text-justify: inter-word;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
-.content {
-    
-    background-color: #537072;
-    padding: 5px 5px 5px 5px;
-}
+
 
 /*.login-background {
 	background: url(../img/bg.jpg) no-repeat;
@@ -75,7 +97,7 @@
 }
 
 .disciplinas-list-content {
-	background-color: #2C4A52 !important;
+	background-color: #262F34 !important;
 	margin-right: .8em;
 	margin-left: .8em;
 	margin-bottom: 20px;
@@ -86,6 +108,7 @@
 }*/
 
 .card-graph{
+	/*background-color:;*/
 	padding-top: 20px;
 	padding-bottom: 15px;
 	padding-left: 15px;
