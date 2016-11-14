@@ -28,8 +28,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'chart.js', 'ionic-na
     url: '/details',
     views: {
       'menuContent':{
-        templateUrl:'templates/details.html'
-      }
+        templateUrl:'templates/details.html',
+        controller: 'DetailsCtrl'
+      } 
     }
   })
   .state('login',{
@@ -42,12 +43,20 @@ angular.module('starter', ['ionic', 'starter.controllers', 'chart.js', 'ionic-na
     url: '/main',
     views: {
       'menuContent':{
-        templateUrl:'templates/main.html'
+        templateUrl:'templates/main.html',
+        controller: 'MainCtrl'
       }
     }
   });
 
+ var user_info = localStorage.getItem('loginInfo');
+ var initial_route;
+ 
+  if(user_info)
+      initial_route = "/app/main";
+  else
+     initial_route = "/login";
 
-  $urlRouterProvider.otherwise('/login');
+  $urlRouterProvider.otherwise(initial_route);
 
 });

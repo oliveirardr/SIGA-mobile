@@ -1,4 +1,4 @@
-<ion-view view-title="Resultados parciais" name="main-view" ng-controller="DetailsCtrl">
+<!-- <ion-view view-title="Resultados parciais" name="main-view" ng-controller="DetailsCtrl">
 
 	<ion-content class="content info-aluno">
 		
@@ -9,7 +9,44 @@
 			
 			<div class="item">
 				
-				<p><b>Faltas:</b> {{ detalhes.faltas }}%</p>
+				<p><b>Faltas:</b> {{ detalhes.porcentagemAusencia }}%</p>
+				<p><b>Média:</b> {{ detalhes.media }}</p>
+				
+			</div>
+
+			<div class="item">
+				
+
+				<b>Notas</b>
+				<br>
+				<br>
+				<canvas id="line" class="chart chart-line" chart-colors="colors"></canvas> 
+
+			</div>
+
+			<div class="item item-text-wrap">
+				<ion-list>
+					<ion-item ng-repeat="notas in detalhes.notas" class="listItem notasList">{{ notas.nome }}: {{ notas.nota }}</ion-item>
+				</ion-list>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
+ -->
+
+
+ <ion-view view-title="Resultados parciais" name="main-view" ng-controller="DetailsCtrl">
+
+	<ion-content class="content info-aluno">
+		
+		<div class="card info-aluno">
+			<div class="item item-divider">
+				{{ detalhes.nome }}
+			</div>
+			
+			<div class="item">
+				
+				<p><b>Faltas:</b> {{ detalhes.porcentagemAusencia }}%</p>
 				<p><b>Média:</b> {{ detalhes.media }}</p>
 				
 			</div>
