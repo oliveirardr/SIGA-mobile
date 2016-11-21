@@ -1,0 +1,19 @@
+<ion-side-menus enable-menu-with-back-views="false">
+
+  <ion-side-menu-content>
+
+    <ion-nav-bar class="bar bar-header bar-balanced">
+
+      <ion-nav-back-button ionic-native-transitions>Voltar</ion-nav-back-button>
+      
+
+
+      <ion-nav-buttons side="right">
+        <button class="button ion-android-exit" ng-click="logout()">
+          Logout
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+</ion-side-menus>

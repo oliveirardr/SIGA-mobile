@@ -1,0 +1,116 @@
+/* Empty. Add your own CSS if you like */
+
+.card{
+	background-color:#DDC5A2!important; 
+}
+.item-divider{
+	background-color:#DDC5A2!important; 
+}
+
+.bar-balanced{
+	/*color:#73605B!important;*/
+	background-color:#EB5E30!important; 
+}
+
+.button-balanced{
+	/*color:#73605B!important;*/
+	background-color:#EB5E30!important;
+}
+
+.button{
+	background-color:#EB5E30!important;	
+}
+
+.content {
+    background-color: #310B28;
+    padding: 5px 5px 5px 5px;
+}
+
+.login-input{
+
+	margin-top: 70%;
+	//vertical-align: center;
+	margin-left: 3%;
+	margin-right: 3%;
+
+}
+
+.login-button{
+	width: 50%!important;
+	margin-left: 47%;
+}
+.info-aluno {
+    font-size: 1em;   
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+
+/*.login-background {
+	background: url(../img/bg.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	padding-bottom: 10px;
+}*/
+
+.pane{
+	background: url(../img/bg.jpg) no-repeat;
+	background-position: center;
+	-webkit-background-size: 280% auto;
+}
+
+.logo {
+  display: block;
+  float: none;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
+  text-align: center;
+  width: 60px;
+}
+
+.title {
+	text-align: center;
+	font-size: 24px;
+	padding: 10px;
+	color: white;
+	transition: opacity 1s linear;
+	opacity: 0;
+}
+
+.notasList {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.disciplinas-list {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.disciplinas-list-header {
+	margin-left: .2rem
+}
+
+.disciplinas-list-content {
+	background-color: #262F34 !important;
+	margin-right: .8em;
+	margin-left: .8em;
+	margin-bottom: 20px;
+}
+
+/*.info-aluno {
+	border-radius: 20
+}*/
+
+.card-graph{
+	/*background-color:;*/
+	padding-top: 20px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	padding-right: 25px;
+}

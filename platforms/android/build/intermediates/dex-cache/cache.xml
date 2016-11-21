@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Rodrigo Oliveira\Desktop\TCC\Gradr-v1-master\simple-login\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="cc746c8b675ef50cd2ab197d9adf0f0b45a64b72">
+        <dex dex="C:\Users\Rodrigo Oliveira\Desktop\TCC\Gradr-v1-master\simple-login\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_ec514fe1625a77d4d8e2697ab7aab824d263eea6.jar" />
+    </item>
+
+</items>

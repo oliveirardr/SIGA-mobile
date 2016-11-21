@@ -1,0 +1,40 @@
+<ion-view name="main-view" view-title="Disciplinas" ng-controller="MainCtrl">
+
+  <ion-content class="content">
+
+
+    <ion-refresher
+    on-refresh="refresh()"
+    pulling-text="Deslize para atualizar..."
+    >
+  </ion-refresher>
+
+
+  <div class="card info-aluno">
+    <div class="item item-divider">
+      Detalhes do aluno:
+    </div>
+    <div class="item item-text-wrap">
+      <p><b>Aluno:</b> {{ aluno.nome }}</p>
+      <p><b>R.A.:</b> {{ aluno.ra }}</p>
+      <br>
+      <p><b>{{ aluno.faculdade }}</b></p>
+      <p><b>Curso:</b> {{ aluno.curso }}</p>
+
+      <div class="card info-aluno disciplinas-list">
+      <b><h2 class="item item-divider">Disciplinas:</h2></b>
+        <ion-list class="">
+          <ion-item ng-repeat="disciplina in disciplinas" class="listItem" native-transitions ng-click="showGrades(disciplina)">{{ disciplina.nome }}</ion-item>
+        </ion-list>
+      </div>
+
+    </div>
+    <ion-android-exit>
+
+    </div>
+
+    
+
+
+  </ion-content>
+</ion-view>
